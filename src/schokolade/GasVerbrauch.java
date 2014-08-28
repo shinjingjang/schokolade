@@ -2,13 +2,11 @@ package schokolade;
 
 public class GasVerbrauch {
 
-	public double berechneGaspreis(int verbrauch)
-			throws UnzulaessigerVerbauchException {
+	public double berechneGaspreis(int verbrauch) throws UnzulaessigerVerbauchException {
 
 		double kosten = 0;
 
-		if (verbrauch < 0)
-			throw new UnzulaessigerVerbauchException(
+		if (verbrauch < 0) throw new UnzulaessigerVerbauchException(
 					"Verbrauch kann nicht negativ sein!");
 
 		if (verbrauch <= 50) {

@@ -6,4 +6,6 @@ public class UnzulaessigerVerbauchException extends Exception {
 		 super("Ein Fehler ist aufgetretten "+s);
 		 
 	}
+
+	
 }
