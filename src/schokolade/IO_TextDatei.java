@@ -9,21 +9,42 @@ public class IO_TextDatei {
 	
 	public IO_TextDatei() {
 		textLesen();
-		textschreiben2();
+		//textschreiben2();
 	}
 
 	public void textLesen() {
 
 		try {
 			br = new BufferedReader(new FileReader("burgmann.txt"));
+			bw = new BufferedWriter(new FileWriter(" new burgmann.txt"));
 			String s;
 			while ((s = br.readLine()) != null) {
-				System.out.println(s);
+				System.out.print(s);
+				bw.write(s);
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();;
+		}finally{
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				bw.flush();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				bw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 	}
