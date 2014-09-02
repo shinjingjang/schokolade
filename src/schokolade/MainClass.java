@@ -8,6 +8,8 @@ public class MainClass {
 		//IO_BinDatei ioB = new IO_BinDatei();
 		//IO_PropertiesDatei iop=new IO_PropertiesDatei();
 		GUI_LayoutManager glout= new GUI_LayoutManager();
+		
+		//GUI_Bild bild=new GUI_Bild();
 	}
 
 }

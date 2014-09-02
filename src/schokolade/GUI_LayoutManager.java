@@ -25,8 +25,8 @@ public class GUI_LayoutManager extends JFrame {
 		// boxLayout();
 		// borderLayout();
 		// flowLayout();
-		//gridLayout();
-		gribagLayout();
+		gridLayout();
+		//gribagLayout();
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setVisible(true);
 		this.pack();
@@ -58,7 +58,7 @@ public class GUI_LayoutManager extends JFrame {
 
 	public void gridLayout() {
 		// wie viel stueck in (heurizontal, vertika)
-		co.setLayout(new GridLayout(2, 2));
+		co.setLayout(new GridLayout(0, 3));
 		co.add(b1);
 		co.add(b2);
 		co.add(b3);
