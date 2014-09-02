@@ -7,9 +7,9 @@ public class MainClass {
 		// IO_TextDatei iot=new IO_TextDatei();
 		//IO_BinDatei ioB = new IO_BinDatei();
 		//IO_PropertiesDatei iop=new IO_PropertiesDatei();
-		GUI_LayoutManager glout= new GUI_LayoutManager();
-		
+		//GUI_LayoutManager glout= new GUI_LayoutManager();
 		//GUI_Bild bild=new GUI_Bild();
+		//Gernetics g=new Gernetics();
 	}
 
 }

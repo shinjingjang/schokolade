@@ -1,10 +1,10 @@
 package schokolade;
 
-public class Gernetics<X> {
+public class Genertics<X> {
 
 	private X content;
 
-	<T> Gernetics(T t) {
+	<T> Genertics(T t) {
 		System.out.println("Der Type T ist: " + t.getClass().getName());
 	}
 	public X getContent(){
@@ -16,8 +16,8 @@ public class Gernetics<X> {
 		System.out.println("Der Type X ist : "+x.getClass().getName());
 	}
 	public static void man(String[] args){
-		Gernetics<Integer> gc1=new Gernetics<Integer>(32.8);
-		Gernetics<Integer>gc2=new <String>Gernetics<Integer>("Test");
+		Genertics<Integer> gc1=new Genertics<Integer>(32.8);
+		Genertics<Integer>gc2=new <String>Genertics<Integer>("Test");
 		//gc2=setContent( new Integer(42));
 		System.out.println(gc2.getContent());
 	}
